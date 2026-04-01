@@ -2,9 +2,10 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Para Sarita</title>
+    <title>Cartica pa mi Sarita</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <!-- Fuente bonita -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
 
     <style>
         body {
@@ -18,19 +19,19 @@
         }
 
         .carta {
-            width: 360px;
-            height: 240px;
-            background: #ffffff;
-            border-radius: 18px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+            width: 340px;
+            height: 220px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.25);
             position: relative;
             cursor: pointer;
             overflow: hidden;
-            transition: transform 0.6s;
+            transition: transform 0.5s;
         }
 
         .carta:hover {
-            transform: scale(1.05);
+            transform: scale(1.06);
         }
 
         .tapa {
@@ -38,10 +39,10 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, #ffb3c6, #fde2e4);
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
             clip-path: polygon(0 0, 100% 0, 50% 65%);
+            transition: transform 0.9s ease;
             transform-origin: top;
-            transition: transform 1s ease;
             z-index: 2;
         }
 
@@ -52,52 +53,41 @@
         .contenido {
             position: absolute;
             inset: 0;
-            padding: 30px;
+            padding: 25px;
             text-align: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 12px;
+            align-items: center;
+            font-size: 18px;
+            color: #555;
             opacity: 0;
-            transition: opacity 1.2s ease 0.6s;
+            transition: opacity 1s ease 0.5s;
+        }
+
+        .contenido strong {
+            font-size: 20px;
+            color: #e75480;
+            margin-bottom: 10px;
         }
 
         .carta.abierta .contenido {
             opacity: 1;
         }
 
-        .titulo {
-            font-family: 'Playfair Display', serif;
-            font-size: 22px;
-            color: #d1495b;
-        }
-
-        .mensaje {
-            font-size: 17px;
-            color: #555;
-            line-height: 1.5;
-        }
-
-        .firma {
-            margin-top: 10px;
-            font-size: 15px;
-            color: #777;
-            font-style: italic;
-        }
-
         .indicacion {
             position: absolute;
-            bottom: -48px;
+            bottom: -45px;
             width: 100%;
             text-align: center;
             font-size: 14px;
             color: #444;
-            animation: flotar 1.6s infinite;
+            animation: flotar 1.5s infinite;
         }
 
         @keyframes flotar {
             0% { transform: translateY(0); }
-            50% { transform: translateY(-7px); }
+            50% { transform: translateY(-6px); }
             100% { transform: translateY(0); }
         }
     </style>
@@ -108,22 +98,13 @@
         <div class="tapa"></div>
 
         <div class="contenido">
-            <div class="titulo">Para mi Sarita</div>
-
-            <div class="mensaje">
-                Gracias por llegar a mi vida y quedarte.<br>
-                Por escucharme, por entenderme y por estar<br>
-                incluso cuando no sé cómo decir lo que siento.<br><br>
-                Tenerte como amiga es un regalo que valoro mucho.
-            </div>
-
-            <div class="firma">
-                Con mucho cariño, siempre.
-            </div>
+            <strong>Para mi Sarita 💖</strong>
+            Gracias Hadita por ser mi amiga.<br>
+            Recuerda que te quiero mucho.
         </div>
 
         <div class="indicacion">
-            Toca la carta con cuidado
+            Toca la carta 💌
         </div>
     </div>
 
